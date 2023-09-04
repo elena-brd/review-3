@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    background: #edeeee;
+    color: #001d3d;
+}
+
+h1,
+h2 {
+    font-family: 'Roboto Slab', serif;
+}
+
+#star {
+    color: #ffd000;
+}
+
+.text-small {
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.review-title {
+    font-weight: 700;
+    font-size: 0.85rem;
+}
+
+.btn {
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 2rem;
+    background: #001d3d;
+    color: #fff;
+    border: none;
+    font-size: 0.85rem;
+    padding: 0.5rem 1rem;
+    border-radius: 15px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 7rem auto;
+}
+
+/* first card */
+#card-review.card {
+    position: relative;
+    background: #f3f3f3;
+    max-width: 500px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    padding: 2.5rem;
+    transition: all 0.3s ease;
+}
+
+#card-review.card.active {
+    z-index: 1;
+}
+
+#card-review .card-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#card-review .card-header h1 {
+    font-size: 1.9rem;
+}
+
+#card-review .average-rating {
+    background: #fff;
+    text-align: center;
+    width: 180px;
+    padding: 0.27rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#card-review .average-rating span {
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+#card-review .average-rating p {
+    padding: 0.25rem 0;
+}
+
+#form-search-input {
+    margin: 2rem 0;
+    background: #fff;
+    border-radius: 15px;
+    padding: 0.5rem 0;
+    color: #777;
+}
+
+#form-search-input input {
+    width: 90%;
+    background: none;
+    border: none;
+}
+
+#form-search-input i {
+    padding: 0 0.5rem;
+}
+
+#form-search-input input::placeholder {
+    color: #777;
+}
+
+#form-search-input input:focus {
+    outline: none;
+}
+
+#form-search-input input::-webkit-search-cancel-button {
+    display: none;
+}
+
+#card-review .review {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5rem 0;
+    font-weight: 600;
+}
+
+#card-review .review i {
+    margin-right: 0.8rem;
+}
+
+#card-review .bar {
+    display: flex;
+    flex-grow: 1;
+    background: #ccc;
+    border: 1px solid #777;
+    border-radius: 15px;
+    height: 8px;
+}
+
+#card-review .bar-filter-5 {
+    background: #ffd000;
+    border: 0.5px solid #777;
+    width: 90%;
+}
+
+#card-review .bar-filter-4 {
+    background: #ffd000;
+    border: 0.5px solid #777;
+    width: 60%;
+}
+
+
+#card-review .rating-number {
+    text-align: center;
+    padding: 0 2rem;
+    color: #001d3d;
+    width: 20px;
+}
+
+
+/* secind card */
+#card-add-review.add-review {
+    position: absolute;
+    top: 11%;
+    right: 40%;
+    background: #fff;
+    max-width: 500px;
+    border-radius: 15px;
+    padding: 2.5rem;
+    transition: all 0.3s ease;
+}
+
+#card-add-review input,
+#card-add-review textarea {
+    width: 100%;
+    margin: 0.5rem 0;
+    border-radius: 8px;
+    border: 1px solid #777;
+    padding: 0.5rem 0.3rem;
+}
+
+#card-add-review textarea {
+    resize: none;
+    padding-bottom: 3rem;
+}

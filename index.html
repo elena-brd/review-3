@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Review 3</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div id="card-review" class="card active">
+
+            <div class="card-header">
+                <h1>What others think about the product</h1>
+                <div class="average-rating">
+                    <span><i class="fa-solid fa-star" id="star"></i> 4.8</span>
+                    <p class="text-small">Average customer rating</p>
+                </div>
+            </div>
+            <form id="form-search-input">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="search" name="search" id="search-input" placeholder="Search topics and reviews">
+            </form>
+            <div class="reviews-main">
+                <h3 class="review-title">Reviews</h3>
+                <div class="review">
+                    <span>5 <i class="fa-solid fa-star" id="star"></i></span>
+                    <div class="bar">
+                        <div class="bar-filter-5"></div>
+                    </div>
+                    <span class="rating-number">106</span>
+                </div>
+                <div class="review">
+                    <span>4 <i class="fa-solid fa-star" id="star"></i></span>
+                    <div class="bar">
+                        <div class="bar-filter-4"></div>
+                    </div>
+                    <span class="rating-number">32</span>
+                </div>
+                <div class="review">
+                    <span>3 <i class="fa-solid fa-star" id="star"></i></span>
+                    <div class="bar"></div>
+                    <span class="rating-number">0</span>
+                </div>
+                <div class="review">
+                    <span>2 <i class="fa-solid fa-star" id="star"></i></span>
+                    <div class="bar"></div>
+                    <span class="rating-number">0</span>
+                </div>
+                <div class="review">
+                    <span>1 <i class="fa-solid fa-star" id="star"></i></span>
+                    <div class="bar"></div>
+                    <span class="rating-number">0</span>
+                </div>
+            </div>
+            <button class="btn" id="btn-write-review">Write a review</button>
+        </div>
+        <div id="card-add-review" class="add-review">
+            <h3 class="review-title">Hello, please leave a review.</h3>
+            <form class="form-input">
+                <div class="form-control">
+                    <input type="text" name="name" id="name" placeholder="First Name" required>
+                    <input type="text" name="name" id="name" placeholder="Last Name" required>
+                </div>
+                <div class="form-control">
+                    <input type="email" name="email" id="email" placeholder="Email" required>
+                </div>
+                <div class="form-control">
+                    <textarea name="message" id="message" placeholder="Your review"></textarea>
+                </div>
+                <button class="btn btn-send">Send review</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="https://kit.fontawesome.com/f0b3d42456.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
